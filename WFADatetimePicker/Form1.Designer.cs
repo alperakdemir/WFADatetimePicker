@@ -33,7 +33,7 @@ namespace WFADatetimePicker
             this.lblYasiniz = new System.Windows.Forms.Label();
             this.lblYasadiginGun = new System.Windows.Forms.Label();
             this.lblBurc = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.btnHesapla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -77,13 +77,13 @@ namespace WFADatetimePicker
             this.lblBurc.TabIndex = 0;
             this.lblBurc.Text = "Burç:";
             // 
-            // dateTimePicker1
+            // dtpDogumTarihi
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(181, 75);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpDogumTarihi.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpDogumTarihi.Location = new System.Drawing.Point(181, 72);
+            this.dtpDogumTarihi.Name = "dtpDogumTarihi";
+            this.dtpDogumTarihi.Size = new System.Drawing.Size(200, 20);
+            this.dtpDogumTarihi.TabIndex = 1;
             // 
             // btnHesapla
             // 
@@ -94,18 +94,21 @@ namespace WFADatetimePicker
             this.btnHesapla.TabIndex = 2;
             this.btnHesapla.Text = "Hesapla";
             this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 442);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(566, 459);
             this.Controls.Add(this.btnHesapla);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDogumTarihi);
             this.Controls.Add(this.lblBurc);
             this.Controls.Add(this.lblYasadiginGun);
             this.Controls.Add(this.lblYasiniz);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -119,7 +122,7 @@ namespace WFADatetimePicker
         private System.Windows.Forms.Label lblYasiniz;
         private System.Windows.Forms.Label lblYasadiginGun;
         private System.Windows.Forms.Label lblBurc;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDogumTarihi;
         private System.Windows.Forms.Button btnHesapla;
     }
 }
