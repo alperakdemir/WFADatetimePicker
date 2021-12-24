@@ -98,13 +98,9 @@ namespace WFADatetimePicker
         }
 
         private void btnHesapla_Click(object sender, EventArgs e)
-        {
-            //1-Yaşını hesaplayınız.
+        {           
             Hesapla();
-                   
-                                  
-
-
+                                                 
         }
     }
 }
